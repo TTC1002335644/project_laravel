@@ -23,6 +23,7 @@ class UserController extends Controller
         $uid = $request->only(['uid']);
 	    $userList = UserModel::where('uid',$uid)->first();
 
+	    
 	    return [$uid,$userList,'ok'];
 	}
 
